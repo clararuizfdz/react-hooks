@@ -5,9 +5,11 @@ export const MyComponent: React.FC = () => {
     const [username, setUserName] = React.useState("");
 
     React.useEffect(() => {
-        setUserName("John");
+        setTimeout(() =>{
+            setUserName("John");
+        },1500)       
     }, []);
-    
+
     return (
         <>
             <h4>{username}</h4>
